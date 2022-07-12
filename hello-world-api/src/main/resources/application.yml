@@ -1,0 +1,30 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: hello-world-api
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  mvc:
+    converters:
+      preferred-json-mapper: gson
+
+  gson:
+    disable-html-escaping: true
+    pretty-printing: true
+    serialize-nulls: true
+
+logging:
+  level:
+    co:
+      featureflags: DEBUG
+ffc:
+  spring:
+    env-secret: ZDMzLTY3NDEtNCUyMDIxMTAxNzIxNTYyNV9fMzZfXzQ2X185OF9fZGVmYXVsdF80ODEwNA==
+    event-uri: https://api-dev.featureflag.co
+    stream-uri: wss://api-dev.featureflag.co

@@ -1,0 +1,19 @@
+server:
+  port: 8764
+
+spring:
+  application:
+    name: hello-world-fr-provider
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  mvc:
+    converters:
+      preferred-json-mapper: gson
+  gson:
+    disable-html-escaping: true
+    pretty-printing: true
+    serialize-nulls: true

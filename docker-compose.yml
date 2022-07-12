@@ -1,0 +1,21 @@
+version: "3"
+services:
+  nacos:
+    image: nacos/nacos-server:v2.1.0
+    container_name: nacos-standalone
+    environment:
+      - PREFER_HOST_MODE=hostname
+      - MODE=standalone
+    volumes:
+      - nacos-vol:/home/nacos
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+    restart: always
+    networks:
+      - nacos-standalone
+
+networks:
+  nacos-standalone:
+volumes:
+  nacos-vol:
