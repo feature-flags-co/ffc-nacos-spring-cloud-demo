@@ -23,7 +23,7 @@ public class HelloWorldController {
     public String echo(@RequestHeader(value = "x-user-key") String userKey,
                        @RequestHeader(value = "x-user-name") String userName) {
         var user = new FFCUser.Builder(userKey).userName(userName).build();
-        var res = client.variation("featureA", user, null);
+        var res = client.variation("language", user, null);
         if ("cn".equals(res)) {
             return cnProvider.echo();
         } else if ("eng".equals(res)) {

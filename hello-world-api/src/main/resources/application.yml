@@ -25,6 +25,4 @@ logging:
       featureflags: DEBUG
 ffc:
   spring:
-    env-secret: ZDMzLTY3NDEtNCUyMDIxMTAxNzIxNTYyNV9fMzZfXzQ2X185OF9fZGVmYXVsdF80ODEwNA==
-    event-uri: https://api-dev.featureflag.co
-    stream-uri: wss://api-dev.featureflag.co
+    env-secret: YTIxLTBlZTItNCUyMDIyMDcyMTAxMzAxOV9fMTU5X18yMTFfXzQyMl9fZGVmYXVsdF83YTMxNw==
